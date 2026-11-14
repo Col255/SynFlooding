@@ -1,0 +1,10 @@
+# Measurement logs and packet captures
+measurement/*.pcap
+*.pcap
+*.log
+
+# Temporary and editor files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
