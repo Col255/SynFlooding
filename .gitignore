@@ -8,3 +8,5 @@ measurement/*.pcap
 Thumbs.db
 __pycache__/
 *.pyc
+
+results.csv
