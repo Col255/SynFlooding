@@ -1,0 +1,48 @@
+services:
+  target:
+    build:
+      context: ./target
+    container_name: doslab_u_target
+    privileged: true
+    environment:
+      - TZ=ICT-7
+    volumes:
+      - ./shared:/shared
+    command: >
+      sh -c "sysctl -w net.ipv4.tcp_syncookies=0 net.ipv4.tcp_synack_retries=1 net.ipv4.tcp_max_syn_backlog=512 net.core.somaxconn=512 >/dev/null 2>&1 || true; exec python -u /app/target_node.py"
+    networks:
+      - unified_net
+
+  attacker:
+    build:
+      context: ./attacker
+    container_name: doslab_u_attacker
+    environment:
+      - TZ=ICT-7
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    depends_on:
+      - target
+    networks:
+      - unified_net
+
+  client:
+    image: python:3.12-slim
+    container_name: doslab_u_client
+    environment:
+      - TZ=ICT-7
+    working_dir: /app
+    volumes:
+      - ./client/client_prober.py:/app/client_prober.py:ro
+      - ./shared:/shared
+    command: ["python", "-u", "/app/client_prober.py"]
+    depends_on:
+      - target
+    networks:
+      - unified_net
+
+networks:
+  unified_net:
+    driver: bridge
+    internal: true

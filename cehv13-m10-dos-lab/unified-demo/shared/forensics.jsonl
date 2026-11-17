@@ -1,0 +1,37 @@
+{"ts": 1794888298.18, "time": "11:04:58", "type": "L4_POLICY", "ip": "admin", "detail": "L4 Defense (SYN Cookies + Firewall) -> ON"}
+{"ts": 1794888298.19, "time": "11:04:58", "type": "L4_FIREWALL_DROP", "ip": "172.26.0.4", "detail": "Phát hiện 128 SYN-RECV → chặn iptables (>2 SYN/s)"}
+{"ts": 1794888322.17, "time": "11:05:22", "type": "L4_AUTO_RELEASE", "ip": "system", "detail": "Luồng SYN Flood đã ngừng → giải phóng rule tạm"}
+{"ts": 1794888335.24, "time": "11:05:35", "type": "L7_POLICY", "ip": "admin", "detail": "L7 Shield -> ON (HeaderTimeout=2.5s, ConnLimit=8)"}
+{"ts": 1794888335.24, "time": "11:05:35", "type": "L7_SHIELD_FLUSH", "ip": "system", "detail": "Ngắt ngay 40 socket Slowloris đang giữ kết nối"}
+{"ts": 1794888336.48, "time": "11:05:36", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888338.0, "time": "11:05:38", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888338.98, "time": "11:05:38", "type": "L7_SLOWLORIS_DROP", "ip": "172.26.0.4", "detail": "Cắt socket giữ header quá 2.5s (408)"}
+{"ts": 1794888339.52, "time": "11:05:39", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888341.06, "time": "11:05:41", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888342.02, "time": "11:05:42", "type": "L7_SLOWLORIS_DROP", "ip": "172.26.0.4", "detail": "Cắt socket giữ header quá 2.5s (408)"}
+{"ts": 1794888342.6, "time": "11:05:42", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888344.11, "time": "11:05:44", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888345.09, "time": "11:05:45", "type": "L7_SLOWLORIS_DROP", "ip": "172.26.0.4", "detail": "Cắt socket giữ header quá 2.5s (408)"}
+{"ts": 1794888345.67, "time": "11:05:45", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888347.19, "time": "11:05:47", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888348.17, "time": "11:05:48", "type": "L7_SLOWLORIS_DROP", "ip": "172.26.0.4", "detail": "Cắt socket giữ header quá 2.5s (408)"}
+{"ts": 1794888348.72, "time": "11:05:48", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888350.27, "time": "11:05:50", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888351.21, "time": "11:05:51", "type": "L7_SLOWLORIS_DROP", "ip": "172.26.0.4", "detail": "Cắt socket giữ header quá 2.5s (408)"}
+{"ts": 1794888351.8, "time": "11:05:51", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888353.32, "time": "11:05:53", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888354.3, "time": "11:05:54", "type": "L7_SLOWLORIS_DROP", "ip": "172.26.0.4", "detail": "Cắt socket giữ header quá 2.5s (408)"}
+{"ts": 1794888354.86, "time": "11:05:54", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888356.37, "time": "11:05:56", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888357.35, "time": "11:05:57", "type": "L7_SLOWLORIS_DROP", "ip": "172.26.0.4", "detail": "Cắt socket giữ header quá 2.5s (408)"}
+{"ts": 1794888357.92, "time": "11:05:57", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888359.43, "time": "11:05:59", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888360.41, "time": "11:06:00", "type": "L7_SLOWLORIS_DROP", "ip": "172.26.0.4", "detail": "Cắt socket giữ header quá 2.5s (408)"}
+{"ts": 1794888360.97, "time": "11:06:00", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888362.5, "time": "11:06:02", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888363.46, "time": "11:06:03", "type": "L7_SLOWLORIS_DROP", "ip": "172.26.0.4", "detail": "Cắt socket giữ header quá 2.5s (408)"}
+{"ts": 1794888364.05, "time": "11:06:04", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888365.57, "time": "11:06:05", "type": "L7_CONN_LIMIT", "ip": "172.26.0.4", "detail": "Chặn 503 (vượt 8 socket/IP)"}
+{"ts": 1794888365.85, "time": "11:06:05", "type": "ADMIN_RESET", "ip": "admin", "detail": "Đã reset số liệu và gỡ toàn bộ rule chặn"}
+{"ts": 1794888365.85, "time": "11:06:05", "type": "L7_POLICY", "ip": "admin", "detail": "L7 Shield -> OFF"}
+{"ts": 1794888365.88, "time": "11:06:05", "type": "L4_POLICY", "ip": "admin", "detail": "L4 Defense (SYN Cookies + Firewall) -> OFF"}
